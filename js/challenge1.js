@@ -1,16 +1,18 @@
-$(document).ready(function(){
-	$("#subscribe").click(function(){
-		if (this.checked){
-			console.log("selected");
-			$("#emailField").css("display", "block")
-		} else{
-			console.log("Not selected");
-			$("#emailField").css("display", "none")
-		}
+//$(document).ready(function(){
+//	$("#subscribe").click(function(){
+//		if (this.checked){
+//			console.log("selected");
+//			$("#emailField").css("display", "block")
+//		} else{
+//			console.log("Not selected");
+//			$("#emailField").css("display", "none")
+//		}
+//	})
+// })
 
-	})
-})
-
+$("#subscribe").click(function(){
+	$("#emailField").toggle("fast");
+});
 //subscribe.onchange = function() {
 //	var x = document.querySelector("#emailField");
 //	if (this.checked){
