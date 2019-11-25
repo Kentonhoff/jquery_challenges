@@ -7,6 +7,7 @@ $("#ch4form").submit(function(){
   if (name.length == 0){
     $("#nameerrormsg").css('display', 'block');
     validInput = false;
+    event.preventDefault();
   }
   else{
     $("#nameerrormsg").css('display','none');
@@ -14,14 +15,14 @@ $("#ch4form").submit(function(){
   if (address.length == 0){
     $("#addrerrormsg").css('display','block');
     validInput = false;
+    event.preventDefault();
   }
   else{
     $("#addrerrormsg").css("display", "none");
   }
-  
   return validInput;
 
-})
+});
 
 //ch4form.onsubmit = function() {
 //    var validInput = true;
