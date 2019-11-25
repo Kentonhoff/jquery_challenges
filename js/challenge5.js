@@ -1,9 +1,9 @@
-var imgs= $("img");
-var msg= "Hover over an image below.";
 $(document).ready(function(){
+		var imgs= $("img")
+		var msg= "Hover over an image below."
 		imgs.mouseover(function(){
 			console.log("mouseover")
-			$("#image").css("backgroundImage", "url('"+this.src+"')");
+			$("#image").css("backgroundImage", "url('"+this.src +"')");
 			$("#image").html(this.alt);
 		});
 		imgs.focus(function(){
